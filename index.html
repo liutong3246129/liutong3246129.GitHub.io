@@ -162,7 +162,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2022/03/21/Hexo_Next_Github_Tutorial/" class="post-title-link" itemprop="url">Hexo Next Github Tutorial</a>
+            <a href="/2022/03/21/Hexo_Next_Github_Tutorial/" class="post-title-link" itemprop="url">Github Hexo_Based Next_Theme Blog Tutorial</a>
         </h2>
 
         <div class="post-meta">
@@ -171,10 +171,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">Posted on</span>
-              
 
-              <time title="Created: 2022-03-21 11:02:26 / Modified: 17:34:44" itemprop="dateCreated datePublished" datetime="2022-03-21T11:02:26+08:00">2022-03-21</time>
+              <time title="Created: 2022-03-21 11:02:26" itemprop="dateCreated datePublished" datetime="2022-03-21T11:02:26+08:00">2022-03-21</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2022-03-22 00:51:02" itemprop="dateModified" datetime="2022-03-22T00:51:02+08:00">2022-03-22</time>
+              </span>
 
           
 
@@ -187,11 +193,13 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="三种效果"><a href="#三种效果" class="headerlink" title="三种效果"></a>三种效果</h2><p>从简洁到完整效果依次实现</p>
+          <p>这篇文章介绍如何利用<code>Github</code>的云存储服务加上(笔记本电脑)本地<code>Hexo</code>软件搭建个人博客，当然也有一个简洁的主题<code>Next</code>。</p>
+<p>博客的搭建是循序渐进的，效果和步骤如下：</p>
+<h2 id="三种效果"><a href="#三种效果" class="headerlink" title="三种效果"></a>三种效果</h2><p>从简洁到完整效果依次实现</p>
 <ol>
 <li><a target="_blank" rel="noopener" href="https://pages-themes.github.io/cayman/another-page.html">Cayman主题Github基础页面</a></li>
 <li><a target="_blank" rel="noopener" href="https://hexojs.github.io/hexo-theme-landscape/">Hexo框架默认主题landscape页面</a></li>
-<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/">Hexo框架Nexa主题页面</a></li>
+<li><a target="_blank" rel="noopener" href="https://theme-next.js.org/">Hexo框架Next主题页面</a></li>
 </ol>
 <h2 id="三个步骤和功能"><a href="#三个步骤和功能" class="headerlink" title="三个步骤和功能"></a>三个步骤和功能</h2><ol>
 <li><strong>Github建专仓</strong>：用于展示个人简历展示。这是Github提供的功能，以自己用户名<code>Username</code>新建仓名为<code>Username.github.io</code>库，即可展示一页<code>*.md</code>的内容，比如<a href="ChFrenkel.github.io">大佬硬件工程师的个人CV</a>。</li>
@@ -250,6 +258,7 @@
 <p>在博客文件夹的根目录下可以找到网站配置文件<code>_config.yml</code>，用文本编辑器打开，找到<code>theme</code>相关部分修改为<code>next</code>：</p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line">theme: <span class="built_in">next</span></span><br></pre></td></tr></table></figure>
 
+<p>这里的<code>_config.yml</code>也可以用户名等信息，可以自由探索。</p>
 <p>注: 在<code>theme/next/</code>中也有一个<code>_config.yml</code>文件，那个是<code>Next</code>主题本身的配置文件，可用于修改主题，比如：</p>
 <figure class="highlight py"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Schemes</span></span><br><span class="line"><span class="comment"># scheme: Muse</span></span><br><span class="line"><span class="comment">#scheme: Mist</span></span><br><span class="line">scheme: Pisces</span><br><span class="line"><span class="comment">#scheme: Gemini</span></span><br></pre></td></tr></table></figure>
 
